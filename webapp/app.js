@@ -18,7 +18,12 @@ catch{
 }
 }
 async function getingredent(ele2){
+  try{
     let ingitem = await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast")
     let readable = await ingitem.json();
     console.log(readable);
+  }
+  catch{
+    console.log("error occuredXX");
+  }
 }
