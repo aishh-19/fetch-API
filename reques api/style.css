@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.card{
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    text-align: center;
+}
